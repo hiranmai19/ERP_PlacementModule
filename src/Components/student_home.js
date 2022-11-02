@@ -70,6 +70,7 @@ export default function App() {
           </NavDropdown>
           <NavDropdown href="/student-home" title="Account" id="basic-nav-dropdown">
           <NavDropdown.Item href="/Profile" className="navitems">Profile</NavDropdown.Item>
+          <NavDropdown.Item href="/remainders" className="navitems">Remainders</NavDropdown.Item>
           <NavDropdown.Item href="/" className="navitems">Logout</NavDropdown.Item>
           </NavDropdown>
         </Nav>

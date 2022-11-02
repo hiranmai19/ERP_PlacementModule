@@ -4,7 +4,6 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import SendMsg from "./Components/sendnotify";
 import SH from "./Components/student_home";
 import Forgot from "./forgotpassword";
-import Dash from "./dashboard";
 import Student from "./student_login_new";
 import Nav1 from "../src/Components/student-nav";
 import Staff from "../src/Components/Staff-portal/Staff_login";
@@ -19,6 +18,7 @@ import Company from "./Components/Company-home";
 import AddJob from "./Components/Add-job";
 import Apply from "./Components/apply";
 import Resume from "./Components/resume";
+import StudentCalender from "./student_calender"
 import Userform from "./Components/Userform";
 import Review from "./Components/reviewapplication";
 import Nav2 from "./Components/company-nav";
@@ -55,6 +55,7 @@ export default function App() {
             }
           />
           <Route path="/profile" element={<div><Nav1/><Profile /></div>} />
+          <Route path = "/remainders" element = {<StudentCalender/>}/>
           <Route path="/Add-job" element={<AddJob />} />
           <Route
             path="/Apply"

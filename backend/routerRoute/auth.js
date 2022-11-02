@@ -206,6 +206,22 @@ catch(err){
 }
 })
 
+router.get("/getAppliedDetails", async(req, res)=>{
+  const companyName = req.cookies.companyName
+  try{
+    const studentDetails = await Company.find({companyName})
+    if(!studentDetails){
+      res.status(401).json({message:"No Students applied till now"})
+    }
+    else{
+      console.log(studentDetails)
+      res.status(200).json(studentDetails)
+    }
+  }
+  catch(e){
+    console.log(e.message)
+  }
+})
 
 router.get("/getAppliedDetails/:companyName", async (req, res)=>{
   const {companyName} = req.params

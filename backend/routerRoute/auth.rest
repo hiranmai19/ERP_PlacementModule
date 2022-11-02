@@ -70,3 +70,6 @@ Content-Type:application/json
 {
   "message":"Hello!"
 }
+
+### 
+GET http://localhost:3007/getAppliedDetails
